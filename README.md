@@ -80,23 +80,7 @@ https://www.swinburne.edu.au/ I want course information and research information
    sidebar under "Settings" if you ever need to change them, along with a
    "Check Ollama connection" button.
 
-## Notes and things you can tweak
 
-- **How the crawl picks pages**: it pulls out meaningful words from what you
-  typed (skipping filler like "I want" and "information"), then matches
-  those against each link's text and URL. If you don't give it a topic at
-  all, it just grabs the first few pages it finds.
-- **Speed cap**: `MAX_PAGES` and `MAX_DEPTH` at the top of `crawler.py`
-  control how much it's willing to crawl - they default to small numbers (8
-  pages, 2 hops) so a crawl finishes quickly. Bump them up if you need more
-  coverage and don't mind the wait.
-- **Different models**: any Ollama chat model works for "Chat model" (e.g.
-  `llama3.1:8b`, `mistral`) as long as you've pulled it. Same for the
-  embedding model.
-- **Scope**: only follows links on the same domain as the page you gave it,
-  and skips non-HTML files (PDFs, images, etc).
-- **Politeness**: small delay between requests, and it respects
-  `robots.txt`.
 
 ## Project files
 
