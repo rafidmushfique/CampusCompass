@@ -5,6 +5,7 @@ finds the relevant pages on that site, then you can ask questions and get
 answers streamed back from your local **Ollama** model. Nothing leaves your
 machine.
 
+
 Example first message:
 
 ```
@@ -29,6 +30,12 @@ https://www.swinburne.edu.au/ I want course information and research information
 4. **Chat UI** (`app.py`) - one Streamlit chat box does everything: the first
    link-containing message starts a crawl, everything after that is a
    question against whatever's currently indexed.
+
+<img width="1918" height="904" alt="demo2" src="https://github.com/user-attachments/assets/15a3c455-8a6a-4740-9d0b-aa7611056d21" /> 
+
+<img width="1907" height="848" alt="Screenshot 2026-09-07 204955" src="https://github.com/user-attachments/assets/59f99719-09cb-42cd-a8ca-1f7199cf74e3" />
+
+
 
 ## Setup
 
